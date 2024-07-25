@@ -8,19 +8,17 @@ permissions:
   contents: read
 
 jobs:
-
   build-and-deploy:
-
     runs-on: ubuntu-latest
     env:
       AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT }}
-      GIGS_STACK_NAME: srilatha-gigs-TS-CdkStack
-      VITE_STACK_NAME: srilatha-gigs-TS-CdkStack
-      VITE_SERVER_ADDRESS: https://${srilatha-gigs-TS-CdkStack}.infinityworks.academy/api
-      VITE_FLYERS_ADDRESS: https://flyers-${srilatha-gigs-TS-CdkStack}.infinityworks.academy
-      AWS_REGION: eu-west-1
+      GIGS_STACK_NAME: priyanka-gigs-TS-CdkStack
+      VITE_STACK_NAME: priyanka-gigs-TS-CdkStack
+      VITE_SERVER_ADDRESS: https://${priyanka-gigs-TS-CdkStack}.infinityworks.academy/api
+      VITE_FLYERS_ADDRESS: https://flyers-${priyanka-gigs-TS-CdkStack}.infinityworks.academy
+      AWS_REGION: ap-south-1
 
-     steps:
+    steps:
       - name: Checkout
         uses: actions/checkout@v3
 
