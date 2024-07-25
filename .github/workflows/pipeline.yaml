@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT }}
-      GIGS_STACK_NAME: YOUR_STACK_NAME_HERE
-      VITE_STACK_NAME: YOUR_STACK_NAME_HERE
-      VITE_SERVER_ADDRESS: https://${YOUR_STACK_NAME_HERE}.infinityworks.academy/api
-      VITE_FLYERS_ADDRESS: https://flyers-${YOUR_STACK_NAME_HERE}.infinityworks.academy
+      GIGS_STACK_NAME: srilatha-gigs-TS-CdkStack
+      VITE_STACK_NAME: srilatha-gigs-TS-CdkStack
+      VITE_SERVER_ADDRESS: https://${srilatha-gigs-TS-CdkStack}.infinityworks.academy/api
+      VITE_FLYERS_ADDRESS: https://flyers-${srilatha-gigs-TS-CdkStack}.infinityworks.academy
       AWS_REGION: eu-west-1
 
     steps:
