@@ -20,16 +20,15 @@ jobs:
       VITE_FLYERS_ADDRESS: https://flyers-${srilatha-gigs-TS-CdkStack}.infinityworks.academy
       AWS_REGION: eu-west-1
 
-    steps:
-
+     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Node.js
         uses: actions/setup-node@v1
-           with:
+          with:
             node-version: '16.x'
-            
+
       - name: Clean install dependencies
         working-directory: ./client
         run: npm ci
